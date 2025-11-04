@@ -7,6 +7,7 @@
 }
 
 :root {
+    --dialog-bg: white;
     --text-color: black;
     --btn-color: white;
     --white-btn-color: white;
@@ -24,6 +25,7 @@
 }
 
 .dark {
+    --dialog-bg: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 90%);
     --header-color: white;
     --light-text-color: hsl(0, 0%, 10%);
@@ -98,7 +100,7 @@ header .theme-toggle-btn:active {
 
 /* Body */
 
-.note-container{
+.note-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em .5em;
@@ -121,7 +123,7 @@ header .theme-toggle-btn:active {
     color: var(--text-color);
 }
 
-.note-card-btns{
+.note-card-btns {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -140,7 +142,7 @@ header .theme-toggle-btn:active {
     color: var(--text-color);
 }
 
-.note-card p{
+.note-card p {
     color: var(--dark-text-color);
     font-size: .8rem;
 }
@@ -148,20 +150,22 @@ header .theme-toggle-btn:active {
 .note-card:hover {
     transform: translateY(-2px);
 }
-.note-card:hover .note-header-btn{
+
+.note-card:hover .note-header-btn {
     opacity: 1;
 }
 
 /* Dialog */
 
 dialog {
+    background: var(--dialog-bg);
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-60%);
     border: none;
     padding: 1.25em;
     max-width: 400px;
-    width: 90vw;
+    width: 70vw;
     border-radius: 10px;
 }
 
@@ -189,7 +193,7 @@ dialog::backdrop {
 
 .dialog-form {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     gap: 1em;
 }
 
@@ -201,7 +205,8 @@ dialog::backdrop {
     font-size: .9rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     color: var(--dark-input-color);
     padding: .5em;
     outline: none;
