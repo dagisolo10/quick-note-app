@@ -153,6 +153,11 @@ header .theme-toggle-btn:active {
     font-size: .8rem;
 }
 
+.note-card .note-date {
+    font-size: .7em;
+    margin-top: auto;
+}
+
 .note-card:hover {
     transform: translateY(-2px);
 }
