@@ -41,12 +41,22 @@
     --dark-input-color: rgba(0, 0, 0, 0.812);
 }
 
+.credit {
+    color: var(--text-color);
+    margin-top: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    transform: translateX(-20px);
+    font-weight: 600;
+    padding: 0 0 10px 0;
+}
+
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
     transition: .4s;
-    margin-bottom: 150px;
 }
 
 header {
@@ -54,7 +64,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em 1em;
-    /* background-color: cyan; */
 }
 
 header h1 {
@@ -105,6 +114,19 @@ header .theme-toggle-btn:active {
 }
 
 /* Body */
+
+.empty-state {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--container-color);
+    color: var(--text-color);
+    gap: 10px;
+    padding: 1em;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+}
 
 .note-container {
     display: grid;
@@ -276,17 +298,3 @@ dialog::backdrop {
     color: var(--btn-color);
     background-color: var(--primary-color);
 }
-
-.empty-state {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background-color: var(--container-color);
-    color: var(--text-color);
-    gap: 10px;
-    padding: 1em;
-    box-shadow: 0 0 10px var(--box-shadow-color);
-}
-
