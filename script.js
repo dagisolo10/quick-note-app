@@ -30,7 +30,7 @@ function toggleTheme() {
 function applyStoredTheme() {
     if(localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark')
-        document.getElementById('themeToggleBtn').textContent = '🌙'
+        document.getElementById('themeToggleBtn').textContent = '☀️'
     }
 }
 
@@ -141,3 +141,4 @@ function closeNoteDialog() {
 
     dialog.close()
 }
+
