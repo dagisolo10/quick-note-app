@@ -42,13 +42,18 @@
 }
 
 .credit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: darkblue; */
     color: var(--text-color);
     margin-top: auto;
-    margin-top: 20px;
-    margin-left: auto;
-    transform: translateX(-20px);
     font-weight: 600;
-    padding: 0 0 10px 0;
+    padding: 10px 0px;
+}
+
+.credit p {
+    transform: translateX(-10px);
 }
 
 body {
