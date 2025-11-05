@@ -55,6 +55,8 @@ function deleteNote(noteID) {
 
 function saveNote(event) {
     event.preventDefault()
+    
+    const date = new Date()
     const title = document.getElementById('noteTitle').value.trim()
     const content = document.getElementById('noteContent').value.trim()
 
@@ -63,7 +65,7 @@ function saveNote(event) {
         notes[index] = {...notes[index], title, content}
     }
     else {
-        notes.unshift({ id: generateID(), title, content })
+        notes.unshift({ id: generateID(), title: title, content: content, time: date.toLocaleTimeString(), date: date.toDateString()})
     }
     
     document.getElementById('noteTitle').value = ""
@@ -102,6 +104,7 @@ function renderNotes() {
                 </div>
             </div>
             <p>${note.content}</p>
+            <p class='note-date'>Note added at ${note.time} on ${note.date}</p>
         </div>`).join("")
 }
 
