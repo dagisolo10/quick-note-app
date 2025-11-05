@@ -7,6 +7,7 @@
 }
 
 :root {
+    --box-shadow-color: rgba(0, 0, 0, 0.133);
     --dialog-bg: white;
     --text-color: black;
     --btn-color: white;
@@ -25,6 +26,7 @@
 }
 
 .dark {
+    --box-shadow-color: rgba(255, 255, 255, 0.104);
     --dialog-bg: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 90%);
     --header-color: white;
@@ -43,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
+    transition: .4s;
 }
 
 header {
@@ -70,6 +73,7 @@ header .buttons {
     border-radius: 10px;
     padding: 0.75em 1.5em;
     cursor: pointer;
+    box-shadow: 0 0 10px var(--box-shadow-color);
     transition: .3s;
 }
 
@@ -87,6 +91,7 @@ header .buttons {
     border-radius: 10px;
     padding: 0em 1.5em;
     cursor: pointer;
+    box-shadow: 0 0 10px var(--box-shadow-color);
     transition: .3s;
 }
 
@@ -114,6 +119,7 @@ header .theme-toggle-btn:active {
     padding: 1em;
     border-radius: 10px;
     gap: 10px;
+    box-shadow: 0 0 10px var(--box-shadow-color);
     transition: .3s;
 }
 
@@ -254,4 +260,17 @@ dialog::backdrop {
 .cancel:hover {
     color: var(--btn-color);
     background-color: var(--primary-color);
+}
+
+.empty-state {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--container-color);
+    color: var(--text-color);
+    gap: 10px;
+    padding: 1em;
+    box-shadow: 0 0 10px var(--box-shadow-color);
 }
