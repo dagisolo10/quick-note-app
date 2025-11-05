@@ -219,6 +219,13 @@ dialog::backdrop {
     border: none;
     border-radius: 10px;
     background-color: var(--input-bg-color);
+    transition: border-color .3s;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1.5px solid var(--primary-color);
 }
 
 .form-group textarea {
