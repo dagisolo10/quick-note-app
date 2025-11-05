@@ -16,7 +16,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    .note-header-btn {
+        opacity: 1;
+    }
+
     .empty-state {
         width: 250px;
     }
@@ -109,4 +113,3 @@
     }
 
 }
-
