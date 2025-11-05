@@ -26,7 +26,7 @@
 }
 
 .dark {
-    --box-shadow-color: rgba(255, 255, 255, 0.104);
+    --box-shadow-color: rgba(255, 255, 255, 0.06);
     --dialog-bg: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 90%);
     --header-color: white;
@@ -152,9 +152,11 @@ header .theme-toggle-btn:active {
 .note-card p {
     color: var(--dark-text-color);
     font-size: .8rem;
+    flex-wrap: wrap;
 }
 
 .note-card .note-date {
+    opacity: .8;
     font-size: .7em;
     margin-top: auto;
 }
@@ -287,4 +289,3 @@ dialog::backdrop {
     padding: 1em;
     box-shadow: 0 0 10px var(--box-shadow-color);
 }
-
