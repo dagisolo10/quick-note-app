@@ -39,6 +39,10 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    dailog {
+        top: 30%;
+        transform: translateX(-50%) translateY(-80%);
+    }
 
     .empty-state {
         width: 180px;
@@ -117,5 +121,6 @@
     }
 
 }
+
 
 
