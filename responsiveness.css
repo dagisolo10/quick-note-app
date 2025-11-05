@@ -98,6 +98,10 @@
     header h1 {
         font-size: 1.5rem;
     }
+    dailog {
+        top: 30%;
+        transform: translateX(-50%) translateY(-80%);
+    }
 
     .add-note-btn,
     .theme-toggle-btn {
@@ -121,6 +125,7 @@
     }
 
 }
+
 
 
 
