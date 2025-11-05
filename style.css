@@ -45,7 +45,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /* background-color: darkblue; */
     color: var(--text-color);
     margin-top: auto;
     font-weight: 600;
@@ -53,7 +52,7 @@
 }
 
 .credit p {
-    transform: translateX(-10px);
+    transform: translateX(-30px);
 }
 
 body {
@@ -303,3 +302,4 @@ dialog::backdrop {
     color: var(--btn-color);
     background-color: var(--primary-color);
 }
+
