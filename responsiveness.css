@@ -3,7 +3,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-
     
     dialog {
         max-width: 400px;
@@ -12,10 +11,6 @@
 }
 
 @media (max-width: 768px) {
-    dailog {
-        top: 30%;
-        transform: translateX(-50%) translateY(-80%);
-    }
     .note-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -39,11 +34,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    dailog {
-        top: 30%;
-        transform: translateX(-50%) translateY(-80%);
-    }
-
+    
     .empty-state {
         width: 180px;
         height: 100px;
@@ -98,11 +89,7 @@
     header h1 {
         font-size: 1.5rem;
     }
-    dailog {
-        top: 30%;
-        transform: translateX(-50%) translateY(-80%);
-    }
-
+    
     .add-note-btn,
     .theme-toggle-btn {
         font-size: .6rem;
@@ -125,6 +112,7 @@
     }
 
 }
+
 
 
 
