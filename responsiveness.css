@@ -5,7 +5,7 @@
     }
 
     
-    dialog{
+    dialog {
         max-width: 400px;
         transform: translateX(-50%) translateY(-50%);
     }
@@ -13,6 +13,7 @@
 
 @media (max-width: 768px) {
     dailog {
+        top: 30%;
         transform: translateX(-50%) translateY(-80%);
     }
     .note-container {
@@ -116,4 +117,5 @@
     }
 
 }
+
 
