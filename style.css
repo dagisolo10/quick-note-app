@@ -48,11 +48,11 @@
     color: var(--text-color);
     margin-top: auto;
     font-weight: 600;
-    padding: 0px 0px;
+    
 }
 
 .credit p {
-    transform: translateX(-20px);
+    transform: translateY(-10px) translateX(-20px);
 }
 
 body {
@@ -302,5 +302,6 @@ dialog::backdrop {
     color: var(--btn-color);
     background-color: var(--primary-color);
 }
+
 
 
