@@ -3,8 +3,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
     
-    dialog {
+    dialog{
         max-width: 400px;
         transform: translateX(-50%) translateY(-50%);
     }
@@ -31,10 +32,13 @@
 
 @media (max-width: 426px) {
     .note-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(1, 1fr); */
     }
+
     
+
     .empty-state {
         width: 180px;
         height: 100px;
@@ -89,7 +93,7 @@
     header h1 {
         font-size: 1.5rem;
     }
-    
+
     .add-note-btn,
     .theme-toggle-btn {
         font-size: .6rem;
@@ -112,8 +116,3 @@
     }
 
 }
-
-
-
-
-
