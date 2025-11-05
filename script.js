@@ -80,6 +80,10 @@ function renderNotes() {
     const noteContainer = document.getElementById('noteContainer')
 
     if (notes.length === 0) {
+        const credit = document.getElementById('credit')
+        credit.style.position = 'absolute'
+        credit.style.bottom = '0'
+        credit.style.right = '0'
         noteContainer.innerHTML = `
         <div class="empty-state">
             <h2>No Notes Added Yet</h2>
